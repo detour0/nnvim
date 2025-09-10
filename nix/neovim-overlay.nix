@@ -35,7 +35,7 @@ let
     telescope-fzf-native-nvim # fast sorting for tel
     plenary-nvim # tel dependency
 
-    catppuccin-vim
+    catppuccin-nvim
     which-key-nvim
   ];
 
