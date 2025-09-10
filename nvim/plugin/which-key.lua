@@ -1,3 +1,3 @@
 require('which-key').setup {
-  preset = 'modern'
+  preset = 'helix'
 }

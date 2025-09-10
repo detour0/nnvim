@@ -31,11 +31,17 @@ let
   #   ...
   # }
   all-plugins = with pkgs.vimPlugins; [
+    telescope-nvim
+    telescope-fzf-native-nvim # fast sorting for tel
+    plenary-nvim # tel dependency
+
+    catppuccin-vim
     which-key-nvim
   ];
 
   extraPackages = with pkgs; [
     # language servers, etc.
+    ripgrep
     lua-language-server
     nil # nix LSP
   ];
