@@ -35,8 +35,18 @@ let
     telescope-fzf-native-nvim # fast sorting for tel
     plenary-nvim # tel dependency
 
-    catppuccin-nvim
-    which-key-nvim
+    nvim-treesitter.withAllGrammars
+    nvim-treesitter-context
+    nvim-treesitter-textobjects
+    nvim-ts-context-commentstring
+    nvim-surround # https://github.com/kylechui/nvim-surround/
+
+    undotree
+    # vim-fugitive
+
+    nvim-unception # prevent nested nvim instances
+    catppuccin-nvim # theme
+    which-key-nvim # display keybinding info
   ];
 
   extraPackages = with pkgs; [

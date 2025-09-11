@@ -20,6 +20,16 @@ opt.softtabstop = 2            -- Number of spaces for tab operations (editing)
 opt.shiftwidth = 2             -- Number of spaces for each indentation level
 opt.smartindent = true         -- auto-indent based on syntax of the code
 
+-- UI
+opt.number = true              -- Show line numbers on the left
+opt.relativenumber = true      -- Show relative line numbers (distance from cursor line)
+opt.cursorline = true          -- Highlight the current cursor line
+opt.lazyredraw = true          -- Don't redraw screen while executing macros (improves performance)
+
+-- Spell checking
+opt.spell = true               -- Enable spell checking
+opt.spelllang = 'en'           -- Set spell checking language to English
+
 -- Splits
 opt.splitright = true          -- Vertical splits open on the right side
 opt.splitbelow = true          -- Horizontal splits open below current window

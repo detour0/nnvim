@@ -6,7 +6,7 @@ vim.g.did_load_catppuccin_plugin  = true
 require("catppuccin").setup({
       flavour = "mocha",  -- Choose "mocha" flavor here
       integrations = {
-        -- treesitter = true,  -- Enable highlight integration with treesitter
+        treesitter = true,  -- Enable highlight integration with treesitter
         telescope = true,   -- Support for telescope plugin highlights
         -- mason = true,       -- Support for mason.nvim
         -- native_lsp = {

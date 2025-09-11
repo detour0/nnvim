@@ -43,9 +43,9 @@ vim.keymap.set("n", "<Up>", ":resize -2<CR>", { desc = "Decrease window height" 
 vim.keymap.set("n", "<Right>", ":vertical resize +2<CR>", { desc = "Increase window width" })
 vim.keymap.set("n", "<Left>", ":vertical resize -2<CR>", { desc = "Decrease window width" })
 
--- Navigate quickfix lists with ctrl + j/k
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
--- Navigate location lists with <leader> + j/k
-vim.keymap.set("n", "<C-k>", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+-- -- Navigate quickfix lists with ctrl + j/k
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- -- Navigate location lists with <leader> + j/k
+-- vim.keymap.set("n", "<C-k>", "<cmd>lnext<CR>zz")
+-- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
