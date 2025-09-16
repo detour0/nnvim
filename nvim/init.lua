@@ -47,4 +47,4 @@ opt.termguicolors = true       -- true color support for improved color schemes
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]  -- Characters for filling UI elements
 -- opt.colorcolumn = '100'        -- Highlight column 100 as a margin guide
 -- opt.isfname:append("@-@")      -- appends @ to valid characters in file names
-
+vim.opt.winborder = 'rounded' -- needed for hintwindow border. 

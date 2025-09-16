@@ -12,6 +12,10 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
+    nvim-lspconfig = {
+      url = "https://github.com/neovim/nvim-lspconfig";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {

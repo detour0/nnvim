@@ -33,7 +33,7 @@ let
   all-plugins = with pkgs.vimPlugins; [
     telescope-nvim
     telescope-fzf-native-nvim # fast sorting for tel
-    plenary-nvim # tel dependency
+    plenary-nvim # telescope, neo-tree dependency
 
     nvim-treesitter.withAllGrammars
     nvim-treesitter-context
@@ -41,10 +41,19 @@ let
     nvim-ts-context-commentstring
     nvim-surround # https://github.com/kylechui/nvim-surround/
 
+    # UI
+    neo-tree-nvim # File-tree explorer
+    nui-nvim # neo-tree dep.
+    lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
+    nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
+    statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
+    nvim-treesitter-context # nvim-treesitter-context
+
     undotree
     # vim-fugitive
 
     nvim-unception # prevent nested nvim instances
+    nvim-web-devicons # nerd font glyphs for other plugins, neo-tree opt. dep.
     catppuccin-nvim # theme
     which-key-nvim # display keybinding info
   ];

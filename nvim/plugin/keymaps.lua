@@ -22,6 +22,7 @@ keyset("n", "<Esc>", "<Esc>:noh<CR>")
 keyset("n", "<leader>sr", ":%s/<C-r><C-w>//g<Left><Left>", {desc="search replace all"})
 
 -- open file explorer | netrw
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Open netrw" })
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
 
 -- Move selected lines down/up in visual mode and re-indent
