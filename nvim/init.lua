@@ -3,6 +3,8 @@ vim.loader.enable()
 local cmd = vim.cmd
 local opt = vim.o
 
+require('user.lsp')
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 

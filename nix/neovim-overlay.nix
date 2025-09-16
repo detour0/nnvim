@@ -6,12 +6,13 @@ let
   pkgs = final;
 
   # Use this to create a plugin from a flake input
-  # mkNvimPlugin =
-  #   src: pname:
-  #   pkgs.vimUtils.buildVimPlugin {
-  #     inherit pname src;
-  #     version = src.lastModifiedDate;
-  #   };
+  mkNvimPlugin =
+    src: pname:
+    pkgs.vimUtils.buildVimPlugin {
+      inherit pname src;
+      version = src.shortRev or src.lastModifiedDate or "git"; # Fallback to "git" if no metadata
+    };
+  lspconfig-plugin = mkNvimPlugin inputs.lspconfig "nvim-lspconfig";
 
   # Make sure we use the pinned nixpkgs instance for wrapNeovimUnstable,
   # otherwise it could have an incompatible signature when applying this overlay.
@@ -54,16 +55,24 @@ let
 
     nvim-unception # prevent nested nvim instances
     nvim-web-devicons # nerd font glyphs for other plugins, neo-tree opt. dep.
+    
+    lspconfig-plugin
     catppuccin-nvim # theme
     which-key-nvim # display keybinding info
   ];
 
   extraPackages = with pkgs; [
-    # language servers, etc.
+ # language servers, etc.
     ripgrep
     lua-language-server
     nil # nix LSP
-  ];
+    ruff
+    nodePackages.typescript-language-server
+    deno
+    rust-analyzer
+    gopls
+    nixpkgs-fmt
+    ];
 in
 {
   # This is the neovim derivation

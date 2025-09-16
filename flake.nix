@@ -12,8 +12,8 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
-    nvim-lspconfig = {
-      url = "https://github.com/neovim/nvim-lspconfig";
+    lspconfig = {
+      url = "github:neovim/nvim-lspconfig";
       flake = false;
     };
   };
@@ -22,6 +22,7 @@
     self,
     nixpkgs,
     flake-utils,
+    lspconfig,
     ...
   }: let
     systems = builtins.attrNames nixpkgs.legacyPackages;

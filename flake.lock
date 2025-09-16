@@ -119,6 +119,22 @@
         "type": "github"
       }
     },
+    "lspconfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1757886255,
+        "narHash": "sha256-lIlFgHkesAK7fRcoEEQO84/0BpE29dBgNzBnCv/0Tf0=",
+        "owner": "neovim",
+        "repo": "nvim-lspconfig",
+        "rev": "d9879110d0422a566fa01d732556f4d5515e1738",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neovim",
+        "repo": "nvim-lspconfig",
+        "type": "github"
+      }
+    },
     "luvit-meta": {
       "flake": false,
       "locked": {
@@ -181,11 +197,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1757487488,
-        "narHash": "sha256-zwE/e7CuPJUWKdvvTCB7iunV4E/+G0lKfv4kk/5Izdg=",
+        "lastModified": 1757745802,
+        "narHash": "sha256-hLEO2TPj55KcUFUU1vgtHE9UEIOjRcH/4QbmfHNF820=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ab0f3607a6c7486ea22229b92ed2d355f1482ee0",
+        "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
         "type": "github"
       },
       "original": {
@@ -195,24 +211,12 @@
         "type": "github"
       }
     },
-    "nvim-lspconfig": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-k5KxnMMGAEc/lRNf68fhPN4Q1+FoccRlko7qs0q8XmE=",
-        "type": "file",
-        "url": "https://github.com/neovim/nvim-lspconfig"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/neovim/nvim-lspconfig"
-      }
-    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
-        "nixpkgs": "nixpkgs_2",
-        "nvim-lspconfig": "nvim-lspconfig"
+        "lspconfig": "lspconfig",
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "systems": {

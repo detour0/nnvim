@@ -4,6 +4,7 @@ end
 vim.g.did_load_neotree_plugin = true
 
 local opts = {
+  close_if_last_window = true,
   hide_root_node = true,
   retain_hidden_root_indent = true,
   filesystem = {
