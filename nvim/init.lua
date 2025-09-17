@@ -1,9 +1,20 @@
 vim.loader.enable()
 
-local cmd = vim.cmd
+local cmd = vim.cmd -- only for lsp test, remove later
 local opt = vim.o
 
-require('user.lsp')
+vim.lsp.enable('pyright')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('denols')
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('nil_ls')
+vim.lsp.enable('gopls')
+vim.lsp.enable('html')
+vim.lsp.enable('cssls')
+vim.lsp.enable('jsonls')
+vim.lsp.enable('tailwindcss')
+vim.lsp.enable('marksman')
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '

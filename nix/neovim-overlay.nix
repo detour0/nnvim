@@ -62,17 +62,25 @@ let
   ];
 
   extraPackages = with pkgs; [
- # language servers, etc.
     ripgrep
     lua-language-server
-    nil # nix LSP
+    nil
     ruff
-    nodePackages.typescript-language-server
+    typescript-language-server
     deno
     rust-analyzer
     gopls
     nixpkgs-fmt
+    vscode-langservers-extracted # Provides html, cssls, jsonls
+    prettier
+    stylelint
+    eslint
+    tailwindcss-language-server
+    marksman
+    sql-formatter
+    pyright
     ];
+
 in
 {
   # This is the neovim derivation
