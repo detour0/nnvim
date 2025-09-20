@@ -1,0 +1,5 @@
+---@mod user.lsp
+---
+---@brief [[
+---LSP related functions
+---@brief ]]
