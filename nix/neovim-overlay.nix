@@ -53,7 +53,7 @@ let
     undotree
     # vim-fugitive
 
-    nvim-unception # prevent nested nvim instances
+    # nvim-unception # prevent nested nvim instances
     nvim-web-devicons # nerd font glyphs for other plugins, neo-tree opt. dep.
     
     lspconfig-plugin

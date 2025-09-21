@@ -8,10 +8,10 @@ require("catppuccin").setup({
       integrations = {
         treesitter = true,  -- Enable highlight integration with treesitter
         telescope = true,   -- Support for telescope plugin highlights
+        native_lsp = {
+          enabled = true,   -- Enable LSP color integrations
+        },
         -- mason = true,       -- Support for mason.nvim
-        -- native_lsp = {
-        --   enabled = true,   -- Enable LSP color integrations
-        -- },
         -- Add other plugin integrations here if needed
       },
     })
